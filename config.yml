@@ -1,4 +1,4 @@
-baseURL: "https://ericspencer00.github.io/"
+baseURL: "https://ericspencer.us/ericspencer-site-backup/"
 publicDir: "public"
 languageCode: "en-us"
 title: "Eric Spencer"
@@ -60,7 +60,7 @@ Params:  # capital P needed for profileMode to work properly in some themes
       - "https://github.com/EricSpencer00"
 
   env: production
-  robotsNoIndex: false
+  robotsNoIndex: true
 
 markup:
   goldmark:

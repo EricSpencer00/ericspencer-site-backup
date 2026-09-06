@@ -29,8 +29,8 @@ jobs:
 
       - name: Build Hugo Site
         run: |
-          HUGO_BASEURL="${{ github.repository == 'EricSpencer00/dev.EricSpencer00.github.io' && 'https://ericspencer00.github.io/dev.EricSpencer00.github.io/' || 'https://ericspencer00.github.io' }}"
-          hugo --minify --baseURL "$HUGO_BASEURL"
+          hugo --minify --baseURL "https://ericspencer.us/ericspencer-site-backup/"
+          python3 tools/noindex_archive.py public
           ls -la public  # Debugging: Check if public folder exists
 
       - name: Upload Artifact for Deployment

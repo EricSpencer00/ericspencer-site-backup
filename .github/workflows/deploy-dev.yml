@@ -33,6 +33,7 @@ jobs:
         run: |
           rm -rf public
           hugo --minify --baseURL "$HUGO_BASEURL"
+          python3 tools/noindex_archive.py public
 
       - name: Verify Hugo build output
         run: |
